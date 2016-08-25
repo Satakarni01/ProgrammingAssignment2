@@ -1,0 +1,23 @@
+> mat <- matrix(c(1,2,3,4), nrow = 2, ncol = 2)
+> mat
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+> mat
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+> mat <- matrix(c(1,2,3,4), nrow = 2, ncol = 2)
+> mat
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+> lst <- makeCacheMatrix(mat)
+> invMat <- cacheSolve(lst)
+> invMat <- cacheSolve(lst)
+Cached inversed matrix
+> invMat
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> 
